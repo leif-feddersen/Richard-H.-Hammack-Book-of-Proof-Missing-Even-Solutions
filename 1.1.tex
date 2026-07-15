@@ -4,6 +4,9 @@
 \usepackage{subcaption}
 \usepackage{pgfplots}
 \pgfplotsset{compat = newest}
+% Newer matplotlib uses \mathdefault in .pgf tick labels but only defines it in a
+% header comment; define it here so figures build (harmless for older matplotlib).
+\def\mathdefault#1{#1}
 
 \title{Even solutions for Richard H. Hammack's Book of Proof}
 \author{Martin Jaskulla}
